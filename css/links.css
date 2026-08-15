@@ -1,0 +1,130 @@
+.links-page {
+  min-height: 100vh;
+  padding: 60px 20px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.links-inner {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* HEADER */
+.links-header {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.links-avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+}
+
+.links-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+  letter-spacing: -0.02em;
+}
+
+.links-bio {
+  font-size: 0.88rem;
+  color: #999;
+}
+
+/* SECTIONS */
+.links-section {
+  margin-bottom: 28px;
+}
+
+.links-section-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* CARDS */
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.link-card i {
+  font-size: 1.05rem;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.link-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.link-card-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.link-card-desc {
+  font-size: 0.76rem;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.link-card-badge {
+  font-size: 0.73rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 99px;
+  background: #f0f0f0;
+  color: #777;
+  white-space: nowrap;
+}
+
+.link-card-badge--edu {
+  background: #fde8f3;
+  color: #E91E8C;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.link-card-badge--edu:hover {
+  background: #E91E8C;
+  color: #fff;
+}

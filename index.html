@@ -15,6 +15,7 @@
   <link rel="icon" type="image/x-icon" href="images/green.png">
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/store.css">
+  <link rel="stylesheet" href="css/links.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -22,7 +23,8 @@
   <header>
     <nav class="header-nav">
       <a href="#projects" data-i18n="nav_projects">Projetos</a>
-    <a href="#/store" data-i18n="nav_store">Loja</a> 
+      <a href="#/store" data-i18n="nav_store">Loja</a>
+      <a href="#/links">Links</a>
       <div class="lang-switch">
         <button class="lang-btn" data-lang="pt">PT</button>
         <button class="lang-btn" data-lang="en">EN</button>
@@ -125,14 +127,71 @@
     </div>
   </section>
 
-  <div class="tech-stack">
-      <span>AI</span>
-      <span>Flutter/Dart</span>
-      <span>IOS</span>
-      <span>Python</span>
-      <span>TypeScript</span>
-      <span>Linux</span>
+  <section class="links-page" id="links" style="display:none">
+    <div class="links-inner">
+
+      <div class="links-header">
+        <div class="links-avatar">FO</div>
+        <h1 class="links-name">Felipe Oliveira</h1>
+        <p class="links-bio">Software Engineer</p>
+      </div>
+
+      <div class="links-section">
+        <p class="links-section-label">Redes sociais</p>
+        <a href="https://www.linkedin.com/in/ollveira" target="_blank" rel="noopener noreferrer" class="link-card">
+          <i class="fab fa-linkedin-in" style="color:#0A66C2"></i>
+          <span class="link-card-label">LinkedIn</span>
+        </a>
+        <a href="https://github.com/felipeollveira" target="_blank" rel="noopener noreferrer" class="link-card">
+          <i class="fab fa-github"></i>
+          <span class="link-card-label">GitHub</span>
+        </a>
+      </div>
+
+      <div class="links-section">
+        <p class="links-section-label">Contato</p>
+        <a href="mailto:felipeoliveira.engineer.com" class="link-card">
+          <i class="fas fa-envelope" style="color:#888"></i>
+          <span class="link-card-label">E-mail</span>
+        </a>
+        <!-- <a href="#" class="link-card" aria-disabled="true">
+          <i class="fab fa-whatsapp" style="color:#25D366"></i>
+          <span class="link-card-label">WhatsApp</span>
+        </a> -->
+      </div>
+
+      <div class="links-section">
+        <p class="links-section-label">Indicações</p>
+        <a href="https://www.fonteagil.com.br" target="_blank" rel="noopener noreferrer" class="link-card">
+          <i class="fas fa-building" style="color:#3bb6ec"></i>
+          <div class="link-card-text">
+            <span class="link-card-label">FonteAgil</span>
+            <span class="link-card-desc">Empresa parceira de tecnologia</span>
+          </div>
+          <span class="link-card-badge">Empresa</span>
+        </a>
+        <a href="https://www.focusedu.com.br/" target="_blank" rel="noopener noreferrer" class="link-card link-card--edu">
+          <i class="fas fa-graduation-cap" style="color:#E91E8C"></i>
+          <div class="link-card-text">
+            <span class="link-card-label">FocusEdu</span>
+            <span class="link-card-desc">Plataforma de estudos — 25% de desconto em qualquer plano</span>
+          </div>
+          <span class="link-card-badge link-card-badge--edu" onclick="event.preventDefault(); copyPromoCode(this)" data-code="FE2026DU">FE2026DU</span>
+        </a>
+
+        <a href="/#/store" target="_blank" rel="noopener noreferrer" class="link-card link-card--edu">
+          <i class="fas fa-graduation-cap" style="color:#e9b31e"></i>
+          <div class="link-card-text">
+            <span class="link-card-label">Super prof. de inglês</span>
+            <span class="link-card-desc">Sua professora inteligente no whatsapp + Grupo de conversação.</span>
+          </div>
+          <span class="link-card-badge" onclick="event.preventDefault(); copyPromoCode(this)" data-code="Bot">Bot</span>
+        </a>
+      </div>
+
     </div>
+  </section>
+
 
   <!-- <section class="contato" id="contato">
     <div class="contato-inner">
@@ -144,9 +203,9 @@
           <i class="fab fa-whatsapp"></i>
           WhatsApp
         </a>
-        <a href="mailto:felipejesus.oliveira@ucsal.edu.br" class="contato-email-link">
+        <a href="mailto:felipeoliveira.engineer.com" class="contato-email-link">
           <i class="fas fa-envelope"></i>
-          felipejesus.oliveira@ucsal.edu.br
+          felipeoliveira.engineer.com
         </a>
       </div>
 
@@ -169,7 +228,7 @@
         <a href="https://github.com/felipeollveira" target="_blank" rel="noopener noreferrer" class="footer-link">
           <i class="fab fa-github"></i> GitHub
         </a>
-        <a href="mailto:felipejesus.oliveira@ucsal.edu.br" class="footer-link">
+        <a href="mailto:felipeoliveira.engineer.com" class="footer-link">
           <i class="fas fa-envelope"></i> E-mail
         </a>
         <span class="footer-sep"></span>
